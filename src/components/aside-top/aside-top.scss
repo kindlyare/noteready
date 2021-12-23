@@ -1,0 +1,25 @@
+
+.aside-top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+
+
+  .aside-top {
+    height: 80px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 12px;
+    border-radius: 50px;
+    font-family: "Poppins", sans-serif;
+    animation: go-left 1.3s;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

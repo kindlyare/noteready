@@ -1,0 +1,145 @@
+@import "./header-mobile.scss";
+
+.navbar {
+  padding: 24px 150px;
+  border-bottom: 1px solid #f1f1f1;
+
+  .logo-container {
+    img {
+      height: 65px;
+      width: 188px;
+      cursor: pointer;
+    }
+  }
+
+  .navbar-nav {
+    overflow: hidden;
+
+    .nav-item {
+      display: flex;
+      justify-content: space-between;
+      cursor: auto;
+    }
+
+    .icon-button {
+      min-width: 320px;
+      height: 65px;
+      padding: 15px;
+      margin: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: filter 0.4s;
+      text-decoration: none;
+      border: 2px solid #f1f1f1;
+      border-radius: 50px;
+
+      img {
+        margin-right: 8px;
+        height: 42px;
+        width: 42px;
+        border: 2px solid #f1f1f1;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .menu-container {
+    display: none;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+
+    .menu-mobile {
+      height: 34px;
+      width: 34px;
+    }
+  }
+
+  .toggle {
+    display: flex;
+
+    p {
+      display: flex;
+      align-items: center;
+      margin: 0 10px;
+      cursor: auto;
+    }
+  }
+
+  input[type="checkbox"] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+
+  label {
+    cursor: pointer;
+    width: 55px;
+    height: 30px;
+    background: #cacaca;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    position: relative;
+
+    &:after {
+      content: "";
+      background: #fff;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      position: absolute;
+      top: 5px;
+      left: 4px;
+      transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+    }
+  }
+
+  input:checked + label {
+    background: #ffbd07;
+  }
+
+  input:checked + label:after {
+    left: calc(100% - 5px);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+.icon-button:hover {
+  filter: brightness(0.94);
+}
+
+.dropdown {
+  position: absolute;
+  top: 135px;
+  right: 250px;
+  transform: translateY(-45%);
+  overflow: hidden;
+  border-radius: 10px;
+  z-index: 2;
+
+  .menu-item {
+    height: 50px;
+    display: flex;
+    padding: 8px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: filter 0.4s;
+    border: 2px solid #f1f1f1;
+    border-radius: 8px;
+  }
+}
+
+.menu-item:hover {
+  filter: brightness(0.9);
+}

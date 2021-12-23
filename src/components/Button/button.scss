@@ -1,0 +1,38 @@
+.button {
+  height: 50px;
+  border-radius: 8px;
+  font-weight: 700;
+  background: #ffa030;
+  padding: 0 32px;
+  color: #2a2627;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  border: 0;
+
+  transition: filter 0.3s;
+
+  &:hover {
+    filter: brightness(1.05);
+  }
+
+  > img {
+    margin-right: 8px;
+  }
+
+  &.doned {
+    background: #63b170;
+    color: #fff;
+  }
+
+  &.cancel {
+    background: #fff;
+  }
+
+  &.remove {
+    background: #ff8671;
+  }
+}

@@ -1,0 +1,48 @@
+@import "./user-mobile.scss";
+
+#page-user {
+  height: 100vh;
+
+  header {
+    .content {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  main {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .create-note {
+      position: fixed;
+      bottom: 40px;
+      right: 45px;
+      z-index: 2;
+
+      button {
+        width: 110px;
+        height: 110px;
+        box-shadow: 0 0 2px #f1f1f1;
+        border: 0;
+        background: #ffae52;
+        color: #2a2627;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        svg {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}

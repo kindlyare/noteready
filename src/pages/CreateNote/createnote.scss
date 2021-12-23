@@ -1,0 +1,69 @@
+@import "./createnote-mobile.scss";
+
+#page-note {
+  height: 100vh;
+
+  main {
+    margin: 16px auto;
+    display: flex;
+    justify-content: center;
+    animation: go-back 1.3s;
+
+    .tox-editor-header {
+      align-self: center;
+      width: 1000px;
+      height: 50px;
+
+      .tox-tbtn {
+        width: 50px;
+        height: 50px;
+      }
+
+      .tox-toolbar__primary {
+        justify-content: center;
+        background-position-y: 55px;
+        background-size: 55px;
+      }
+    }
+
+    .tox-tinymce {
+      border-radius: 35px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgb(161, 160, 158);
+      font-size: 20px;
+
+      p {
+        margin-left: 500px;
+      }
+    }
+
+    .tox-statusbar {
+      visibility: hidden;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      gap: 22px;
+      padding: 20px;
+    }
+  }
+}
+
+@keyframes go-back {
+  0% {
+    transform: translatey(1000px);
+  }
+  100% {
+    transform: translatey(0);
+  }
+}
+
+@keyframes go-left {
+  0% {
+    transform: translatex(1200px);
+  }
+  100% {
+    transform: translatex(0);
+  }
+}

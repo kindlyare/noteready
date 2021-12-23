@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-light: #494949;
+  --backgroud-light: #f1e3e4;
+  --color-button-light: #cfcdcd;
+  --backgroud-button-light: #494949;
+  --backgroud-aside-light: #aabd8c;
+  --color-header-light: #494949;
+  --color2-light: #f1f1f1;
+  --color-dark: #61565f;
+  --backgroud-dark: #2a2627;
+  --color-button-dark: #494949;
+  --backgroud-aside-dark: #f39b6d;
+  --color2-dark: #f1f1f1;
+  --background-header-dark: #494949;
+}
+
+
+.aside-top,
+button {
+  font: 700 16px "Outfit", sans-serif;
+}
+
+body {
+  font: 500 16px "Outfit", sans-serif;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  #page-user {
+    font-size: 85%;
+  }
+
+  h1 {
+    font-size: 170%;
+  }
+}

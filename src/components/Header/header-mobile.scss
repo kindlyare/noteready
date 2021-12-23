@@ -1,0 +1,22 @@
+@media (max-width: 900px) {
+  nav.navbar {
+    z-index: 4;
+    padding: 24px 32px;
+
+    .navbar-nav {
+      .icon-button {
+        display: none;
+      }
+    }
+
+    .toggle {
+      display: none;
+    }
+
+    .menu-container {
+      display: flex;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

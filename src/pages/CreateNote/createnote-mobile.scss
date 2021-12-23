@@ -1,0 +1,40 @@
+@media (max-width: 900px) {
+  .aside-top {
+    max-height: 80px;
+    max-width: 350px;
+    z-index: 3;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .tox-editor-header {
+      display: flex;
+      justify-content: center;
+
+      .tox-tbtn {
+        max-width: 27px;
+        max-height: 27px;
+      }
+
+      .tox-toolbar--scrolling {
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        max-width: 280px;
+        background-size: 100px;
+      }
+    }
+
+    .tox-tinymce {
+      box-shadow: 0 2px 4px rgb(161, 160, 158);
+      max-width: 380px;
+
+      p {
+        margin-left: 500px;
+      }
+    }
+  }
+}
